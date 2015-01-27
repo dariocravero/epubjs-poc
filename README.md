@@ -1,4 +1,4 @@
-# RCE's POC built on top of epubjs
+# An eBook reader. POC built on top of epubjs and React
 
 ## Install the dependencies
 
@@ -8,7 +8,7 @@ npm install
 
 ## Get your ebook in place
 
-Put it in `public/ebooks/demo`
+Unzip it at `public/ebooks/demo`
 
 
 ## Run with
