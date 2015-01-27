@@ -3,7 +3,7 @@
   "version":      "0.0.1",
   "description":  "HMH's epubjs POC",
   "main":         "js/app.js",
-  "readme":       "README",
+  "readme":       "README.md",
   "dependencies": {
     "epubjs":       "^0.2.3",
     "http-server":  "^0.7.4",
