@@ -1,0 +1,37 @@
+{
+  "name":         "epubjs-poc",
+  "version":      "0.0.1",
+  "description":  "HMH's epubjs POC",
+  "main":         "js/app.js",
+  "readme":       "README",
+  "dependencies": {
+    "epubjs":       "^0.2.3",
+    "http-server":  "^0.7.4",
+    "react":        "^0.12.2"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify":     "^3.0.0",
+    "jest-cli":   "~0.1.17",
+    "reactify":   "^0.15.2",
+    "uglify-js":  "~2.4.15",
+    "watchify":   "^2.1.1"
+  },
+  "scripts": {
+    "start":  "watchify -o public/app.js -v -d .",
+    "server": "http-server -p 3000",
+    "build":  "NODE_ENV=production browserify . | uglifyjs -cm > public/app.min.js",
+    "test":   "jest"
+  },
+  "author":   "Darío Javier Cravero <dario.cravero@hmhco.com>",
+  "license":  "MIT",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}
